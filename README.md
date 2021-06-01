@@ -1,2 +1,5 @@
 # Terraform_aws_autoscaling
-# aws_terraform_architecture
+
+Add a route53 configured hosted zone as "dns-name" variable in variables.tf
+
+Add aws profile in variables.tf and export the same as AWS_PROFILE environment variable
