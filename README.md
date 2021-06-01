@@ -1,4 +1,4 @@
-# Terraform_aws_autoscaling
+# AWS Terraform Architecture
 
 Add a route53 configured hosted zone as "dns-name" variable in variables.tf
 
