@@ -1,0 +1,10 @@
+host 10.0.3.*
+  ProxyCommand ssh -q -W %h:%p ec2-user@{{ bastion_host }} -o StrictHostKeyChecking=no
+  StrictHostKeyChecking no
+  ForwardAgent yes
+
+host 10.0.4.*
+  ProxyCommand ssh -q -W %h:%p ec2-user@{{ bastion_host }} -o StrictHostKeyChecking=no
+  StrictHostKeyChecking no
+  ForwardAgent yes
+

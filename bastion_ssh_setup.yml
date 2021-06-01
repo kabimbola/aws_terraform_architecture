@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+      - name: Set the IP of the bastion host in ssh.cfg
+        vars: 
+          bastion_host: "{{ bastion_hostname }}"
+        template:
+          src: ssh.j2
+          dest: ssh.cfg
+
