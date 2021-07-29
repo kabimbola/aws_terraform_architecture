@@ -10,6 +10,6 @@ variable "external_ip" {
 
 variable "dns-name" {
   type    = string
-  default = "cmcloudlab1635.info"
+  default = "cmcloudlab812.info"
 }
 
