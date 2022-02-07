@@ -8,8 +8,8 @@ variable "external_ip" {
   default = "0.0.0.0/0"
 }
 
-variable "dns-name" {
-  type    = string
-  default = "cmcloudlab812.info"
-}
+# variable "dns-name" {
+#   type    = string
+#   default = "cmcloudlab1627.info"
+# }
 
