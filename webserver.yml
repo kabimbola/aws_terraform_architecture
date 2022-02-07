@@ -9,25 +9,25 @@
      
     - name: Download the tomcat package
       get_url:
-        url: https://downloads.apache.org/tomcat/tomcat-10/v10.0.6/bin/apache-tomcat-10.0.6.tar.gz
-        dest: ./apache-tomcat-10.0.6.tar.gz
+        url: https://downloads.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomcat-10.0.16.tar.gz
+        dest: ./apache-tomcat-10.0.16.tar.gz
     
     - name: Extract the downloaded apache packager
       unarchive:
-        src: apache-tomcat-10.0.6.tar.gz
+        src: apache-tomcat-10.0.16.tar.gz
         dest: ./
         remote_src: yes
 
     - name: Make startup script executable
       file:
-        path: ./apache-tomcat-10.0.6/bin/startup.sh
+        path: ./apache-tomcat-10.0.16/bin/startup.sh
         mode: u+x
 
     - name: Make shutdown script executable
       file:
-        path: ./apache-tomcat-10.0.6/bin/shutdown.sh
+        path: ./apache-tomcat-10.0.16/bin/shutdown.sh
         mode: u+x
 
     - name: Execute startup
-      command: nohup ./apache-tomcat-10.0.6/bin/startup.sh 
+      command: nohup ./apache-tomcat-10.0.16/bin/startup.sh 
 
