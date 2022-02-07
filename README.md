@@ -25,7 +25,7 @@ Default output format [None]: json
 
 # Create a dir and pull the codes from github.
 [ec2-user@bastion ~]$ mkdir -p terraform-project; cd terraform-project;
--- pull the code
+# pull the code
 [ec2-user@bastion terraform-project]$ git clone git@github.com:olayori/aws_terraform_architecture.git
 
 # Set the profile in variables.tf to the AWS_PROFILE (kenny)
