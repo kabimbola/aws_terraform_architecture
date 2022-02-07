@@ -1,16 +1,15 @@
 # AWS Terraform Architecture
-
-Add a route53 configured hosted zone as "dns-name" variable in variables.tf
+- Add a route53 configured hosted zone as "dns-name" variable in variables.tf
 
 # Setup bastion host, I used Amazon AMI linux
 
 # On the bastion host:
-install ansible
-install terraform
-install aws cli
-install python3.X, pip, boto3 and botocore
-set aws credentials
-install git and connect git to your github account
+- install ansible
+- install terraform
+- install aws cli
+- install python3.X, pip, boto3 and botocore
+- set aws credentials
+- install git and connect git to your github account
 
 # Configure and export AWS CLI
 export aws profile variable
